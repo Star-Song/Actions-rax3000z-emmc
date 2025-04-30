@@ -22,11 +22,21 @@
 		};
 
 		white_led: white {
-			label = "rax3000m:white";
+		        label = "rax3000m:white";
 			gpios = <&pio 34 GPIO_ACTIVE_LOW>;
 		};
+	
+		green_led: green {
+			label = "rax3000m:green";
+			gpios = <&pio 9 GPIO_ACTIVE_LOW>;
+		};
 
+		blue_led: blue {
+			label = "rax3000m:blue";
+			gpios = <&pio 12 GPIO_ACTIVE_LOW>;
+		};
 	};
+
 
 	gpio-keys {
 		compatible = "gpio-keys";
